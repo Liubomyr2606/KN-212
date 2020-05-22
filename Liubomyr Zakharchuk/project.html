@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Sen:700&display=swap&subset=cyrillic" rel="stylesheet">
+     
+    <title>ProjectWeb</title>
+ 
+    <style>
+   table {
+    width: 300px; 
+    border: 1px solid green; 
+    margin: auto; 
+   }
+   td {
+    text-align: center; 
+   }
+  </style>
+    
+    </head>
+<body>
+
+
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <div class="header_logo">LunchIt &#9749; 
+            </div>
+            
+            <nav class="nav">
+                 <a id="navbar-ul-dropdown-list" class="nav_link">
+                    <button id="navbar-ul-dropdown-button">Меню</button>
+                    <div id="navbar-ul-dropdown-content">
+                        <div href="#">Гарячі страви</div>
+                        <div href="#">Холодні закуски</div>
+                        <div href="#">Напої</div>
+                            <div href="#">Інше</div>
+                     </div>
+                    
+                </a>
+                <a class="nav_link" href="#">Куди доставляємо?</a>
+                <a class="nav_link" href="#">Увійти</a>
+                <a class="nav_link" href="#">Реєстрація</a>
+               <a id="themeButton" class="nav_link" href="#">Альтернативна тема</a>
+              
+            
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            
+            <h1 class="intro_title">LunchIt</h1>
+
+            <a class="btn" href="#">Ми це -</a>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="container">
+            <div class="slider_inner">
+                <div class="slider_item active">
+                    <span class="slider_num">01</span>
+                   <span class="slider_text" >Надійність</span>
+                </div>
+                <div class="slider_item">
+                    <span class="slider_num">02</span>
+                    <span class="slider_text" >Швидкість</span>
+                </div>
+                <div class="slider_item">
+                    <span class="slider_num">03</span>
+                    <span class="slider_text" >Довіра до споживача</span>
+                </div>
+                <div class="slider_item">
+                    <span class="slider_num">04</span>
+                    <span class="slider_text" >Якість</span>
+                </div>
+            <div class="slider_item">
+                    <span class="slider_num">05</span>
+                <span class="slider_text" >Розумна ціна</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /.intro -->
+
+
+<section class="section">
+    <div class="container">
+
+        <div class="section_header">
+            <h2 class="section_title">Хто ми такі ?</h2>
+            <div class="section_text">
+                <p>Ми - професіональний сервіс по доставці страв з улюблених ресторанів до твого дому гарячими.Не будь голодним – завантажуй мобільний додаток! </p>
+            </div>
+        </div>
+
+
+    </div><!-- /.container -->
+</section>
+
+<div class="arrow">
+        <div style="width:100%;border-color: red;">
+            <p align="middle">UP</p>
+        </div>
+    </div>
+
+    <style>
+    .arrow
+    {
+        cursor: pointer;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        position: fixed;
+        display: flex;
+        align-self: flex-end;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000000;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #000000;
+        color: white;
+    }
+</style>
+ 
+    
+
+<div class="statistics">
+    <div class="container">
+
+        <div class="stat">
+            <div class="stat_item">
+                <div class="stat_count">31 </div>
+                    <div class="stat_text">Заклад співпрацює </div>
+            </div>
+            <div class="stat_item">
+                <div class="stat_count">789</div>
+                <div class="stat_text">Задоволених клієнтів</div>
+            </div>
+            <div class="stat_item">
+                <div class="stat_count">19</div>
+                <div class="stat_text">Нагород</div>
+            </div>
+            <div class="stat_item">
+                <div class="stat_count">56</div>
+                <div class="stat_text">Акційних днів</div>
+            </div>
+            <div class="stat_item">
+                <div class="stat_count">1972</div>
+                <div class="stat_text">Працівника</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<table>
+   <tr>
+    <td>Залиште свій відгук!</td>
+   </tr>
+  </table>
+   
+    <form id="section_form" action="#" method="post" onsubmit="CheckForm(); return false">
+
+        <input class="section_form_text_input" type="text" id="name" name="name" placeholder="Ваше ім'я" />
+        <br />
+        <input class="section_form_text_input" type="text" id="lastname" name="lastname" placeholder="Ваша фамілія" />
+        <br />
+        <input class="section_form_text_input" type="text" id="mail" name="mail" placeholder="Ваша електронна адреса" />
+        <br />
+        <input class="section_form_phone_input" type="tel" id="user_phone" name="user_phone" pattern="[0-9]{12}" placeholder="Номер телефону" /> 
+
+        <small>Наприклад: 380123456789</small> 
+        <br />
+        <label for="other">Ваша оцінка сервісу:</label>
+        <select id="section-form-mark" name="mark">
+            <option value="Незадовільна">Незадовільна</option>
+            <option value="Задовільна">Задовільна</option>
+            <option value="Чудова!">Чудова!</option>
+        </select>
+        <br />
+
+        <label for="other">Коментарі </label>
+        <textarea id="section_form_comments" name="form_comments"></textarea>
+        <br />
+        <input id="section-form-submit" type="submit" value="Залишити відгук!" />
+    </form>
+
+
+</body>
+    
+</html>
+
+<script>
+    document.querySelector(".arrow").style.top = window.innerHeight-60+'px';
+document.querySelector(".arrow").addEventListener('click',()=>scroll(0,0));
+
+function CheckForm(){
+    if(CheckFirstName() && CheckLastName() && CheckMail() && CheckNumber())
+    {
+        alert("Дякуємо за відгук!");
+    }
+}
+
+function CheckFirstName()
+{
+    let fnameValue = document.forms["section_form"]["name"].value;
+    if(!IsLetter(fnameValue))
+    {
+        alert("Ім'я повинно складатися з букв!");
+        return false;
+    }
+    return true;
+}
+
+function CheckLastName(){
+    let lnameValue = document.forms["section_form"]["lastname"].value;
+    if(!IsLetter(lnameValue))
+    {
+        alert("Фамілія повинна складатися з букв!");
+        return false;
+    }
+    return true;
+}
+
+function CheckNumber(){
+    let numberValue = document.forms["section_form"]["user_phone"].value;
+    if(!IsNumber(numberValue)){
+        alert("Невірно введений номер!");
+        return false;
+    }
+    return true;
+}
+
+function CheckMail(){
+    var regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
+    let mail = document.forms["section_form"]["mail"].value;
+    if (mail.match(regex))
+    {
+        return true;
+    }
+    else
+    {
+        alert("Невірно введена пошта!");
+        return false;
+    }
+}
+
+function IsLetter(value){
+    var regex=/^[a-zA-Z]+$/;
+    if (value.match(regex))
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+function IsNumber(value){
+    return !isNaN(value);
+}
+    /*NewTheme*/
+    document.querySelector("#themeButton").addEventListener('click',()=>changeTheme());
+function changeTheme()
+{
+    if ( typeof (changeTheme.theme) == 'undefined' ) {
+        changeTheme.theme = 'bright';
+        }
+    if(changeTheme.theme = 'bright'){
+            console.log('theme cheking to dark. Current theme is: '+ changeTheme.theme);
+
+        changeTheme.theme = 'dark';
+        switchDark();
+    }
+    else if(changeTheme.theme = 'dark')
+    {
+            console.log('theme cheking to bright. Current theme is: '+ changeTheme.theme);
+
+        changeTheme.theme = 'bright';
+        switchBright();
+    }
+}
+
+function switchDark()
+{
+    console.log("theme was switched to dark");
+    document.querySelector(".intro").style.background = "url('assets/images/intro_dark.jpg') center no-repeat";
+    document.querySelector("body").style.background = "#140D01";
+    document.querySelector("body").style.color = "white";
+    document.querySelector(".section").style.background = "url('assets/images/background_dark.jpg') center no-repeat";
+    document.querySelector(".statistics").style.background = "#F1813E";
+
+}
+
+function switchBright()
+{   
+    console.log("theme was switched to bright");
+    document.querySelector(".intro").style.background = "url('assets/images/intro.jpg') center no-repeat";
+      document.querySelector("body").style.color = "black";
+     document.querySelector(".section").style.background = "url('assets/images/background.jpg') center no-repeat";
+}
+    
+    
+    
+    
+
+</script>
